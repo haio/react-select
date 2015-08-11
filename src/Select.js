@@ -405,7 +405,7 @@ var Select = React.createClass({
 			});
 		}, 50);
 		if (this.props.onBlur) {
-			this.props.onBlur(event);
+			this.props.onBlur(event, this.state.inputValue);
 		}
 	},
 
