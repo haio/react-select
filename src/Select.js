@@ -499,6 +499,7 @@ var Select = React.createClass({
 	},
 
 	loadAsyncOptions: function(input, state, callback) {
+		input = input || '';
 		var thisRequestId = this._currentRequestId = requestId++;
 		if (this.props.cacheAsyncResults) {
 			for (var i = 0; i <= input.length; i++) {
